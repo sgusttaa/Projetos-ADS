@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de propriedades do CSS</title>
+    <style>
+        /* Tipos de propriedades do CSS */
+        .seletor{
+            color: #481293; /* por código */
+            font-size: 50px; /* unidade de medida */
+            text-align: end; /* por nome */
+            /* multiplas unidades */
+            border: solid 5px #17161a;
+            /* por função */
+            width: calc(100% - 100px);
+        }
+        /* Pseudo-Classe */
+        .seletor:hover {
+            background-color: burlywood;
+        }
+        .seletor::first-letter {
+            font-size: 150px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="seletor">Seletor</div>
+</body>
+</html>

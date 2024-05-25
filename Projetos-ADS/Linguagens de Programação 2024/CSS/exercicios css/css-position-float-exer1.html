@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Position | Float Exer1</title>
+        <style>
+            *{
+                font-family: roboto;
+                margin: 0;
+                padding: 0;
+            }
+            /* conteudo da pagina */
+            #lateral{
+                width: 20%;
+                height: 100vh;
+                background-color: #17BEBB;
+                float: left;
+                position: absolute;
+            }
+
+            #principal{
+                width: 80%;
+                height: 100vh;
+                background-color: #E8EBF7;
+                float: right;
+                position: relative;
+            }
+            /* fim do conteudo da pagina */
+
+            /* links */
+            a{
+                display: flex;
+                padding: 25px 10px;
+                font-size: 23px;
+                text-decoration: none;
+                color: #fff;
+            }
+
+            a:hover{
+                background-color: #fff;
+                color: #17BEBB;
+            }
+            /* fim de links */
+
+            /* textos */
+
+            .corpo {
+                display: flex;
+                justify-content: center; 
+                align-items: center; 
+                flex-direction: column; 
+                height: 100%; 
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div id="lateral">
+            <a href="#">Home</a>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Contato</a>
+
+        </div>
+
+        <div id="principal">
+            <div class="corpo">
+                <h1>Seja bem-vindo ao nosso site</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam itaque iste odio eos. Nihil voluptatem.</p>
+            </div>
+        </div>
+        
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensinando CSS Float</title>
+    <style>
+        .estilo {
+            background-color: blue;
+            color: #f0f0f0;
+            border: solid 2px #2d0404;
+            width: 100px;
+            height: 100px;
+            /* display: inline; */
+            float: left;
+            margin: 5px;
+        }
+        .flutuar {
+            background-color: yellow;
+            border: solid 2px #2d0404;
+            width: 150px;
+            height: 150px;
+            float: right;
+        }
+        p {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="flutuar">Conteúdo1</div>
+    <div class="estilo">Conteúdo2</div>
+    <div class="estilo">Conteúdo3</div>
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, quas recusandae ratione praesentium eligendi ea rerum nemo ipsum nulla placeat sequi reiciendis esse aspernatur omnis suscipit commodi accusantium modi impedit.
+    </p>
+    <div class="estilo">Conteúdo4</div>
+    <div class="estilo">Conteúdo4</div>
+    <div class="estilo">Conteúdo4</div>
+    <div class="estilo">Conteúdo4</div>
+</body>
+</html>

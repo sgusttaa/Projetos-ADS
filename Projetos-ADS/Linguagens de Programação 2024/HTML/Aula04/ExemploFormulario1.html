@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo de Formulário</title>
+  </head>
+  <body>
+    <form action="https://65eb910843ce164189340597.mockapi.io/api/v1/cliente/" method="get">
+        <fieldset>
+            <legend>Cadastro de Cliente</legend>
+            <p>
+              <label for="nome">Nome</label>
+              <input type="text" name="nome" id="nome" placeholder="Nome completo" required />
+            </p>
+            <p>
+              <label for="email">E-Mail</label>
+              <input type="email" name="email" id="email" required/>
+            </p>
+            <p>
+              <label for="telefone">Telefone</label>
+              <input type="tel" name="telefone" id="telefone" placeholder="(XX) XXXX-XXXX">
+            </p>
+            <p>
+                <button type="submit">Gravar</button>
+            </p>
+          </fieldset>
+    </form>
+    
+  </body>
+</html>

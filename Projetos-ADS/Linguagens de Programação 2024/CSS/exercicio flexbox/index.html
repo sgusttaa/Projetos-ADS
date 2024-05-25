@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tela de Login</title>
+        <link rel="icon" href="pessoa.png">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: calibri;
+            }
+
+            form{
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #container{
+                box-shadow: 4px 4px 10px 3px rgba(0, 0, 0,0.61);
+                border-radius: 30px;
+                width: 350px;
+                height: 55vh;
+                display: flex;
+                justify-content: center;
+            }
+
+            #logo{
+                position: absolute;
+                margin-top: 15px;
+            }
+
+            #login{
+                position: relative;
+                height: 180px;
+                top: 22vh;
+            }
+
+            label{
+                font-size: 20px;
+            }
+
+            #usuario, #senha{
+                width: 180px;
+                height: 25px;
+                border: none;
+                border-radius: 10px;
+                box-shadow: 4px 3px 10px 0px rgba(0, 0, 0,0.41);
+            }
+
+            #enviar{
+                width: 180px;
+                font-size: 19px;
+                border-radius: 20px;
+                border: none;
+                background-color: #000;
+                color: #fff;
+                cursor: pointer;
+                box-shadow: 4px 3px 16px 0px rgba(54, 54, 54, 0.41);
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <form action="https://65ede7ba08706c584d9ad94d.mockapi.io/user" method="post">
+            <div id="container">
+
+                <div id="logo">
+                    <img width="120px" src="pessoa.png" alt="imagem login"> 
+                </div>
+
+                <div id="login">
+
+                    <label for="usuario">Usuário*</label><br>
+                    <input id="usuario" type="text" name="usuario" placeholder="Digite seu usuário" required>
+                    <br><br>
+
+                    <label for="senha">Senha*</label><br>
+                    <input id="senha" type="password" name="senha" placeholder="Digite sua senha" required>
+
+                    <br><br>
+
+                    <input id="enviar" type="submit" value="Enviar">
+                </div>
+            </div>
+        </form>
+        
+    </body>
+</html>

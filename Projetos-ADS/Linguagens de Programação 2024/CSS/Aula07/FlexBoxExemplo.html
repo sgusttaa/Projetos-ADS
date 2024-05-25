@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de CSS - FlexBox</title>
+    <style>
+        .container-flexbox{
+            display: flex;
+            border: solid 1px red;
+            /* como mudar os eixos */
+            flex-direction: row-reverse;
+            flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row;
+            /* pula linha */
+            flex-wrap: wrap;
+            /* junção do flex-direction com o flex-wrap */
+            flex-flow: column-reverse wrap;
+            flex-flow: row-reverse wrap;
+
+        }
+        .item{
+            font-size: 30px;
+            border: solid 1px black;
+            width: 200px;
+            /* mudar a ordem dos itens */
+            /* order: 2; */
+        }
+        .item2{
+            font-size: 30px;
+            border: solid 1px black;
+            width: 200px;
+            /* order: 1; */
+            /* alinhar no eixo transversal um item específico */
+            /* align-self: flex-end; */
+            flex-grow: 2; /*crescer um item específico */
+        }
+        .container-flexbox2{
+            display: flex;
+            border: solid 1px blue;
+            height: 300px;
+            /* posicionamento eixo principal */
+            /* justify-content: center;
+            justify-content: flex-end;
+            justify-content: space-around;
+            justify-content: space-between; */
+            justify-content: center;
+
+            /* posicionamento eixo perpendicular */
+            /* align-items: flex-start; */
+            align-items: center;
+            /* aplicar borda nos itens */
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aula de CSS - FlexBox</h1>
+    <h2>A direção (eixos) e como pular linha</h2>
+    <div class="container-flexbox">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+    <h2>Posicionamento dos itens</h2>
+    <div class="container-flexbox2">
+        <div class="item">1</div>
+        <div class="item2">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+</html>
